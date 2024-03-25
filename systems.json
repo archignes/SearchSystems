@@ -23,11 +23,20 @@
     "search_link": "https://askpandi.com/ask",
     "special_note": "beta",
     "default_placeholder": "Ask me anything...",
-    "twitter_link": "https://x.com/ask_pandi",
+    "twitter_link": "https://twitter.com/ask_pandi",
     "notable_features": [
-      {"name": "PandiPedia", "url": "https://askpandi.com/pandipedia/discover"},
-      {"name": "Actions", "url": "https://blog.askpandi.com/2024/01/10/introducing-actions-v1/"},
-      {"name": "Source Management", "url": "https://blog.askpandi.com/2023/10/02/introducing-askpandi-your-answer-engine/"}
+      {
+        "name": "PandiPedia",
+        "url": "https://askpandi.com/pandipedia/discover"
+      },
+      {
+        "name": "Actions",
+        "url": "https://blog.askpandi.com/2024/01/10/introducing-actions-v1/"
+      },
+      {
+        "name": "Source Management",
+        "url": "https://blog.askpandi.com/2023/10/02/introducing-askpandi-your-answer-engine/"
+      }
     ]
   },
   {
@@ -37,9 +46,7 @@
     "wikipedia_link": "https://en.wikipedia.org/wiki/Brave_Search",
     "twitter_link": "https://twitter.com/brave",
     "android_choice_screen_options": true,
-        "default_in_browser": [
-          "Brave"
-        ],
+    "default_in_browser": ["Brave"],
     "github_link": "https://github.com/brave"
   },
   {
@@ -102,7 +109,7 @@
     "name": "ChatGPT - 4",
     "id": "chatgpt-4",
     "account_required": true,
-    "paid_subscription_required": "true",
+    "paid_subscription_required": true,
     "search_link": "https://chat.openai.com/?model=gpt-4",
     "wikipedia_link": "https://en.wikipedia.org/wiki/ChatGPT",
     "twitter_link": "https://twitter.com/OpenAI",
@@ -112,15 +119,15 @@
     "name": "Bing",
     "id": "bing",
     "search_link": "https://www.bing.com/search?q=%s",
-        "default_in_browser": [
-          "Edge",
-          "Chrome",
-          "Brave",
-          "Arc",
-          "Firefox",
-          "Opera",
-          "Safari"
-        ],
+    "default_in_browser": [
+      "Edge",
+      "Chrome",
+      "Brave",
+      "Arc",
+      "Firefox",
+      "Opera",
+      "Safari"
+    ],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Bing_(search_engine)"
   },
   {
@@ -130,15 +137,15 @@
     "search_link": "https://duckduckgo.com/?q=%s",
     "android_choice_screen_options": true,
     "wikipedia_link": "https://en.wikipedia.org/wiki/DuckDuckGo",
-        "default_in_browser": [
-          "Edge",
-          "Chrome",
-          "Brave",
-          "Arc",
-          "Firefox",
-          "Opera",
-          "Safari"
-        ]
+    "default_in_browser": [
+      "Edge",
+      "Chrome",
+      "Brave",
+      "Arc",
+      "Firefox",
+      "Opera",
+      "Safari"
+    ]
   },
   {
     "name": "Microsoft Copilot",
@@ -155,10 +162,7 @@
     "search_link": "https://www.ecosia.org/search?q=%s",
     "wikipedia_link": "https://en.wikipedia.org/wiki/Ecosia",
     "android_choice_screen_options": true,
-        "default_in_browser": [
-          "Brave",
-          "Safari"
-        ],
+    "default_in_browser": ["Brave", "Safari"],
     "nonprofit_verification": "https://www.bcorporation.net/en-us/find-a-b-corp/company/ecosia-gmbh/",
     "twitter_link": "https://twitter.com/ecosia"
   },
@@ -174,7 +178,7 @@
   {
     "name": "Marginalia Search",
     "id": "marginalia-search",
-    "about-link": "https://www.marginalia.nu/marginalia-search/about/",
+    "about_link": "https://www.marginalia.nu/marginalia-search/about/",
     "search_link": "https://search.marginalia.nu/search?query=%s",
     "github_link": "https://github.com/Marginalia/search",
     "twitter_link": "https://twitter.com/MarginaliaNu",
@@ -187,10 +191,8 @@
     "account_required": true,
     "mobile_app_breaks_links_warning": true,
     "trial_limit": "100 searches",
-    "paid_subscription_required": "true",
-        "default_in_browser": [
-          "Arc"
-        ],
+    "paid_subscription_required": true,
+    "default_in_browser": ["Arc"],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Perplexity.ai"
   },
   {
@@ -198,9 +200,7 @@
     "id": "qwant",
     "search_link": "https://www.qwant.com/?q=%s",
     "android_choice_screen_options": true,
-        "default_in_browser": [
-          "Brave"
-        ],
+    "default_in_browser": ["Brave"],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Qwant"
   },
   {
@@ -225,8 +225,8 @@
     "twitter_link": "https://twitter.com/KagiHQ"
   },
   {
-    "name":"Globe Explorer",
-    "id":"globe-explorer",
+    "name": "Globe Explorer",
+    "id": "globe-explorer",
     "special_note": "v1",
     "search_link": "https://explorer.globe.engineer/?q=%s",
     "twitter_link": "https://twitter.com/globe_engineer",
@@ -302,12 +302,9 @@
     "nondistinct_url": false,
     "wikipedia_link": "https://en.wikipedia.org/wiki/Wikipedia",
     "twitter_link": "https://twitter.com/wikipedia",
-    "nonprofit_verification":"https://projects.propublica.org/nonprofits/organizations/200049703",
+    "nonprofit_verification": "https://projects.propublica.org/nonprofits/organizations/200049703",
     "web_search_system": false,
-        "default_in_browser": [
-          "Firefox",
-          "Opera"
-        ]
+    "default_in_browser": ["Firefox", "Opera"]
   },
   {
     "name": "Swisscows",
@@ -321,11 +318,7 @@
     "id": "yandex",
     "search_link": "https://yandex.com/search/?text=%s",
     "android_choice_screen_options": true,
-        "default_in_browser": [
-          "Edge",
-          "Chrome",
-          "Arc"
-        ],
+    "default_in_browser": ["Edge", "Chrome", "Arc"],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Yandex"
   },
   {
@@ -336,11 +329,12 @@
     "android_choice_screen_options": true,
     "twitter_link": "https://twitter.com/yepsearch"
   },
-  {"name": "Wayback Machine",
-  "id": "wayback-machine",
-  "search_link": "https://web.archive.org/web/*/%s",
-  "wikipedia_link": "https://en.wikipedia.org/wiki/Wayback_Machine",
-  "twitter_link": "https://twitter.com/waybackmachine"
+  {
+    "name": "Wayback Machine",
+    "id": "wayback-machine",
+    "search_link": "https://web.archive.org/web/*/%s",
+    "wikipedia_link": "https://en.wikipedia.org/wiki/Wayback_Machine",
+    "twitter_link": "https://twitter.com/waybackmachine"
   },
   {
     "name": "Mojeek",
@@ -361,10 +355,8 @@
     "id": "startpage",
     "search_index": "google",
     "search_link": "https://www.startpage.com/do/search?q=%s",
-        "default_in_browser": [
-          "Brave"
-        ],
-    "wikipedia_link": "https://en.wikipedia.org/wiki/Startpage.com" 
+    "default_in_browser": ["Brave"],
+    "wikipedia_link": "https://en.wikipedia.org/wiki/Startpage.com"
   },
   {
     "name": "Stract",
@@ -381,26 +373,13 @@
     "wikipedia_link": "https://en.wikipedia.org/wiki/Google_Search",
     "twitter_link": "https://twitter.com/Google",
     "github_link": "https://github.com/google",
-        "default_in_browser": [
-          "Edge",
-          "Chrome",
-          "Brave",
-          "Arc",
-          "Firefox",
-          "Opera"
-        ]
+    "default_in_browser": ["Edge", "Chrome", "Brave", "Arc", "Firefox", "Opera"]
   },
   {
     "name": "Yahoo",
     "id": "yahoo",
     "default_placeholder": "Search the web...",
-    "default_in_browser": [
-      "Safari",
-      "Edge",
-      "Chrome",
-      "Arc",
-      "Opera"
-    ],
+    "default_in_browser": ["Safari", "Edge", "Chrome", "Arc", "Opera"],
     "search_link": "https://search.yahoo.com/search?p=%s",
     "wikipedia_link": "https://en.wikipedia.org/wiki/Yahoo!",
     "twitter_link": "https://twitter.com/Yahoo"

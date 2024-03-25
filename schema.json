@@ -1,0 +1,182 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Search Systems",
+  "description": "An array of search system objects representing search engines or search interfaces.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "id", "search_link"],
+    "properties": {
+      "name": {
+        "description": "The name of the search system.",
+        "type": "string"
+      },
+      "id": {
+        "description": "A unique identifier for the search system.",
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "search_link": {
+        "description": "The URL template for performing a search using the system. Replace `%s` with the search query.",
+        "type": "string",
+        "pattern": "^(https?://[^\\s]+(?:%s)?[^\\s]*)$"
+      },
+      "base_url_for": {
+        "description": "Indicates that the current system serves as the base URL for other systems specified in the array.",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "account_required": {
+        "description": "Indicates whether an account is required to use the search system.",
+        "type": "boolean"
+      },
+      "nondistinct_url": {
+        "description": "Indicates whether the search link URL is not distinct for different search modes or variations of the same system.",
+        "type": "boolean"
+      },
+      "mobile_app_breaks_links_warning": {
+        "description": "Indicates whether the mobile app version of the search system fails process search links that the website version can handle. This may require the user to setup rules for opening such links in their browser.",
+        "type": "boolean"
+      },
+      "linkedin_link": {
+        "description": "The LinkedIn URL for the search system or its organization.",
+        "type": "string",
+        "format": "uri",
+        "pattern": "^(https?://(?:www\\.)?linkedin\\.com/[^\\s]+)$"
+      },
+      "wikipedia_link": {
+        "description": "The Wikipedia URL for the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "twitter_link": {
+        "description": "The Twitter URL for the search system or its organization or developer.",
+        "type": "string",
+        "pattern": "^(https?://(?:www\\.)?twitter\\.com/[^\\s]+)$"
+      },
+      "github_link": {
+        "description": "The GitHub URL for the search system or its organization.",
+        "type": "string"
+      },
+      "open_source_license": {
+        "description": "The open source license under which the search system is released, if indicated.",
+        "type": "string"
+      },
+      "android_choice_screen_options": {
+        "description": "Indicates whether the search system is available as an option in the Android choice screen from September 2023 - August 2024 (https://www.android.com/choicescreen-winners/).",
+        "type": "boolean"
+      },
+      "default_in_browser": {
+        "description": "Specifies the browsers in which the search system is set as one of the initially available default search engines.",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notable_features": {
+        "description": "A list of notable features of the search system.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "description": {
+              "type": "string"
+            }
+          },
+          "required": ["name"]
+        }
+      },
+      "tagline": {
+        "description": "A brief system-provided tagline or description of the search system.",
+        "type": "string"
+      },
+      "default_placeholder": {
+        "description": "The default placeholder text for the system's search input field.",
+        "type": "string"
+      },
+      "special_note": {
+        "description": "Any special note or additional information about the search system, such as 'demo' or 'beta'. Example usage: This is prominently marked in the Searchjunct system titles.",
+        "type": "string"
+      },
+      "search_index": {
+        "description": "Specifies the underlying search index used by the search system.",
+        "type": "string"
+      },
+      "discord_link": {
+        "description": "The Discord server URL for the search system or its community.",
+        "type": "string",
+        "pattern": "^(https?://(?:www\\.)?discord\\.com/invite/[^\\s]+)$"
+      },
+      "product_hunt_link": {
+        "description": "The Product Hunt URL for the search system.",
+        "type": "string",
+        "pattern": "^(https?://(?:www\\.)?producthunt\\.com/products/[^\\s]+)$"
+      },
+      "paid_subscription_required": {
+        "description": "Indicates whether a paid subscription is required to use the search system.",
+        "type": "boolean"
+      },
+      "trial_limit": {
+        "description": "Specifies the trial limit for the search system, if applicable.",
+        "type": "string"
+      },
+      "base_url": {
+        "description": "Specifies the base URL for the search system, if applicable. This is needed for instances where search systems do not accept null queries (i.e. ecosia).",
+        "type": "string",
+        "format": "uri"
+      },
+      "manual_switch_required": {
+        "description": "Indicates whether manual switching is required to access the search system.",
+        "type": "boolean"
+      },
+      "ios_app": {
+        "description": "The URL for the iOS app of the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "android_app": {
+        "description": "The URL for the Android app of the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "chrome_extension": {
+        "description": "The URL for the Chrome extension of the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "safari_extension": {
+        "description": "The URL for the Safari extension of the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "about_link": {
+        "description": "The URL for the 'About' page of the search system.",
+        "type": "string",
+        "format": "uri"
+      },
+      "charity_search_engine": {
+        "description": "Indicates whether the search system is a charity search engine.",
+        "type": "boolean"
+      },
+      "nonprofit_verification": {
+        "description": "The URL for verifying the nonprofit status of the search system or its organization.",
+        "type": "string",
+        "format": "uri"
+      },
+      "web_search_system": {
+        "description": "Indicates whether the system is primarily used for web search.",
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  }
+}
