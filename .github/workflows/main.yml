@@ -1,0 +1,25 @@
+name: Sync to S3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'systems.json'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-session-name: GitHubActions
+      - name: Sync files
+        run: aws s3 sync . s3://your-bucket-name --delete
