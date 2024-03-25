@@ -1,8 +1,10 @@
 # Search Systems API
 
-**Note:** The Search Systems API is currently in development. We recommend not relying on it for critical applications.
-
 The Search Systems API provides a means to interact with a curated list of search system objects. It currently offers functionalities to retrieve the entire list, a specific system by ID, or the count of all available systems.
+
+[![Sync Repository to API](https://github.com/archignes/SearchSystems/actions/workflows/main.yml/badge.svg)](https://github.com/archignes/SearchSystems/actions/workflows/main.yml) [![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fxbq1s7ts13.execute-api.us-east-1.amazonaws.com%2Fbeta%2F%3Faction%3Dgithub-shield&label=Count%20of%20Systems)](https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?action=count)
+
+**Note:** The Search Systems API is currently in development. We recommend not relying on it for critical applications.
 
 This API was originally written to deduplicate efforts on [Searchevals.com](https://searchevals.com/) and [Searchjunct.com](https://searchjunct.com/) and as part of the Archignes goal of supporting exit and voice in search.
 

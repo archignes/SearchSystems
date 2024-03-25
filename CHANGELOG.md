@@ -16,7 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Documentation of the purpose, API, and repository in README.md
+- a copy of the AWS Lambda function: serveSearchSystems.py
+- Documentation of the purpose, API (including current status with badges), and repository in README.md
 - CHANGELOG.md
 - systems.json
 - schema.json
