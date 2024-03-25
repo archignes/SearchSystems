@@ -45,7 +45,6 @@
   {
     "name": "YouChat - Research",
     "id": "youchat-research",
-    "test": ""
     "account_required": true,
     "paid_subscription_required": true,
     "search_link": "https://you.com/search?q=%s&tbm=youchat&chatMode=research",
