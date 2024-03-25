@@ -22,5 +22,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           role-session-name: GitHubActions
-      - name: Sync files
-        run: aws s3 sync . s3://archignes-search-systems --delete
+      - name: Sync systems.json
+        run: |
+          aws s3 sync . s3://archignes-search-systems --exclude '*' --include 'systems.json'
+          aws s3 rm s3://archignes-search-systems/ --recursive --exclude 'systems.json'
