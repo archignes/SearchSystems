@@ -45,9 +45,13 @@ def lambda_handler(event, context):
             "color": "blue"
         }
 
-    # Otherwise, return the full list of systems
+    # If the action is to get the systems, return the full list of systems
+    elif action == 'systems':
+        result = {'systems': systems}
+
+    # Otherwise, return the status code and a note
     else:
-        result = systems
+        result = {'message': 'Welcome to the Archignes Search Systems API!'}
 
     # Return the result
     return {

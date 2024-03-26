@@ -103,7 +103,8 @@
     "account_required": true,
     "search_link": "https://chat.openai.com/?model=text-davinci-002-render-sha",
     "wikipedia_link": "https://en.wikipedia.org/wiki/ChatGPT",
-    "twitter_link": "https://twitter.com/OpenAI"
+    "twitter_link": "https://twitter.com/ChatGPTapp",
+    "github_link": "https://github.com/openai/"
   },
   {
     "name": "ChatGPT - 4",
@@ -112,12 +113,13 @@
     "paid_subscription_required": true,
     "search_link": "https://chat.openai.com/?model=gpt-4",
     "wikipedia_link": "https://en.wikipedia.org/wiki/ChatGPT",
-    "twitter_link": "https://twitter.com/OpenAI",
+    "twitter_link": "https://twitter.com/ChatGPTapp",
     "github_link": "https://github.com/openai/"
   },
   {
     "name": "Bing",
     "id": "bing",
+    "twitter_link": "https://twitter.com/bing",
     "search_link": "https://www.bing.com/search?q=%s",
     "default_in_browser": [
       "Edge",
@@ -151,6 +153,7 @@
     "name": "Microsoft Copilot",
     "id": "microsoft-copilot",
     "search_link": "https://copilot.microsoft.com/",
+    "twitter_link": "https://twitter.com/MSFTCopilot",
     "wikipedia_link": "https://en.wikipedia.org/wiki/Microsoft_Copilot"
   },
   {
@@ -199,6 +202,7 @@
     "name": "Qwant",
     "id": "qwant",
     "search_link": "https://www.qwant.com/?q=%s",
+    "twitter_link": "https://twitter.com/QwantCom",
     "android_choice_screen_options": true,
     "default_in_browser": ["Brave"],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Qwant"
@@ -259,6 +263,7 @@
     "name": "Tavily",
     "id": "tavily",
     "account_required": true,
+    "twitter_link": "https://twitter.com/tavilyai",
     "search_link": "https://app.tavily.com/playground"
   },
   {
@@ -317,6 +322,7 @@
     "name": "Yandex",
     "id": "yandex",
     "search_link": "https://yandex.com/search/?text=%s",
+    "twitter_link": "https://twitter.com/yandexcom",
     "android_choice_screen_options": true,
     "default_in_browser": ["Edge", "Chrome", "Arc"],
     "wikipedia_link": "https://en.wikipedia.org/wiki/Yandex"
@@ -348,7 +354,8 @@
     "id": "metager",
     "search_link": "https://metager.org/meta/meta.ger3?eingabe=%s",
     "android_choice_screen_options": true,
-    "wikipedia_link": "https://en.wikipedia.org/wiki/MetaGer"
+    "wikipedia_link": "https://en.wikipedia.org/wiki/MetaGer",
+    "twitter_link": "https://twitter.com/MetaGer"
   },
   {
     "name": "Startpage",
@@ -356,6 +363,7 @@
     "search_index": "google",
     "search_link": "https://www.startpage.com/do/search?q=%s",
     "default_in_browser": ["Brave"],
+    "twitter_link": "https://twitter.com/startpage",
     "wikipedia_link": "https://en.wikipedia.org/wiki/Startpage.com"
   },
   {
@@ -373,7 +381,14 @@
     "wikipedia_link": "https://en.wikipedia.org/wiki/Google_Search",
     "twitter_link": "https://twitter.com/Google",
     "github_link": "https://github.com/google",
+    "base_url_for": ["google-sge"],
     "default_in_browser": ["Edge", "Chrome", "Brave", "Arc", "Firefox", "Opera"]
+  },
+  {
+    "id": "google-sge",
+    "name": "Google SGE",
+    "search_link": "https://www.google.com/search?q=test",
+    "nondistinct_url": true
   },
   {
     "name": "Yahoo",

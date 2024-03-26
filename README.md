@@ -28,7 +28,10 @@ Retrieves a comprehensive list of search systems.
 
 - **URL:** `/`
 - **Method:** `GET`
-- **Response:** `200 OK` - Returns a JSON array of search system objects.
+- **Query Parameters:** `action=systems` - Triggers the systems action.
+- **Response:** `200 OK` - Returns a JSON array of search system objects (see [systems.json](systems.json)).
+
+Example: [https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?action=systems](https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?action=systems)
 
 ### Get Search System by ID
 
@@ -41,6 +44,29 @@ Fetches a search system specified by its ID.
   - `200 OK` - Success, returns the search system object.
   - `404 Not Found` - When the specified ID does not exist, returns `{"message": "System not found"}`.
 
+Example: [https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?id=ecosia](https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?id=ecosia)
+
+Example response:
+
+```json
+{
+name: "Ecosia",
+id: "ecosia",
+search_index: "bing",
+charity_search_engine: true,
+base_url: "https://www.ecosia.org",
+search_link: "https://www.ecosia.org/search?q=%s",
+wikipedia_link: "https://en.wikipedia.org/wiki/Ecosia",
+android_choice_screen_options: true,
+default_in_browser: [
+"Brave",
+"Safari"
+],
+nonprofit_verification: "https://www.bcorporation.net/en-us/find-a-b-corp/company/ecosia-gmbh/",
+twitter_link: "https://twitter.com/ecosia"
+}
+```
+
 ### Get Search System Count
 
 Provides the total number of available search systems.
@@ -49,6 +75,16 @@ Provides the total number of available search systems.
 - **Method:** `GET`
 - **Query Parameters:** `action=count` - Triggers the count action.
 - **Response:** `200 OK` - Returns a JSON object with the total count.
+
+Example: [https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?action=count](https://xbq1s7ts13.execute-api.us-east-1.amazonaws.com/beta/?action=count)
+
+Example response:
+
+```json
+{
+count: "42"
+}
+```
 
 ## Search System Object Structure
 
