@@ -21,6 +21,15 @@
         "type": "string",
         "pattern": "^(https?://[^\\s]+(?:%s)?[^\\s]*)$"
       },
+      "search_link_joiner": {
+        "description": "Some search systems require `%20` to join the search terms instead of a `+` (plus sign).",
+        "type": "string",
+        "pattern": "%20"
+      },
+      "search_link_note": {
+        "description": "Key information about the search link pattern.",
+        "type": "string"
+      },
       "base_url_for": {
         "description": "Indicates that the current system serves as the base URL for other systems specified in the array.",
         "type": "array",

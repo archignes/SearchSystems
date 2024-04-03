@@ -338,6 +338,7 @@
   {
     "name": "Wayback Machine",
     "id": "wayback-machine",
+    "search_link_joiner": "%20",
     "search_link": "https://web.archive.org/web/*/%s",
     "wikipedia_link": "https://en.wikipedia.org/wiki/Wayback_Machine",
     "twitter_link": "https://twitter.com/waybackmachine"
@@ -353,7 +354,7 @@
     "name": "Mojeek - RAG",
     "id": "mojeek-rag",
     "search_link": "https://labs.mojeek.com/rag/index.html",
-    "wikipedia_link": "https://en.wikipedia.org/wiki/Mojeek"
+    "search_link_note": "(undocumented) It is possible to mock a new `rid` for each search and use `https://labs.mojeek.com/rag/search.html?q=%s&rid={mock_this}`."
   },
   {
     "name": "MetaGer",
@@ -400,6 +401,8 @@
     "name": "Devv",
     "id": "devv",
     "search_link": "https://devv.ai/search/%s",
+    "search_link_note": "Append `?agentMode=True` for Agent Mode",
+    "search_link_joiner": "%20",
     "twitter_link": "https://twitter.com/devv_ai"
   },
   {
