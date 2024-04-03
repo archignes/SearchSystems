@@ -350,6 +350,12 @@
     "wikipedia_link": "https://en.wikipedia.org/wiki/Mojeek"
   },
   {
+    "name": "Mojeek - RAG",
+    "id": "mojeek-rag",
+    "search_link": "https://labs.mojeek.com/rag/index.html",
+    "wikipedia_link": "https://en.wikipedia.org/wiki/Mojeek"
+  },
+  {
     "name": "MetaGer",
     "id": "metager",
     "search_link": "https://metager.org/meta/meta.ger3?eingabe=%s",
