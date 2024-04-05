@@ -30,6 +30,10 @@
         "description": "Key information about the search link pattern.",
         "type": "string"
       },
+      "search_link_requires_query": {
+        "description": "Indicates whether the search link requires a query to be processed by the search system.",
+        "type": "boolean"
+      },
       "base_url_for": {
         "description": "Indicates that the current system serves as the base URL for other systems specified in the array.",
         "type": "array",
